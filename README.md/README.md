@@ -1,6 +1,6 @@
-# 📄 Certificate OCR System
+# 📄 Task 01 Teerop
 
-A web-based **Certificate OCR System** developed using **FastAPI** and **Tesseract OCR**. This application allows users to upload certificate images, extract text automatically using Optical Character Recognition (OCR), display the extracted information, and download the OCR result as a text file.
+A web-based **Task 01 Teerop** developed using **FastAPI** and **Tesseract OCR**. This application allows users to upload certificate images, extract text automatically using Optical Character Recognition (OCR), display the extracted information, and download the OCR result as a text file.
 
 ---
 
@@ -37,7 +37,7 @@ A web-based **Certificate OCR System** developed using **FastAPI** and **Tessera
 # 📁 Project Structure
 
 ```
-Certificate-OCR-System
+Task 01 Teerop
 │
 ├── static/
 │   └── css/
@@ -163,9 +163,9 @@ Example:
 
 # 👩‍💻 Author
 
-**ALINA SHARIF**
+**HHassan Ali Khan**
 
-Certificate OCR System
+Task 01 Teerop
 
 Developed using FastAPI and Tesseract OCR.
 

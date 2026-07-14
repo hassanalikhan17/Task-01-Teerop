@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📄 OCR Result</h1>
+    <p class="success">
+        ✅ Certificate Processed Successfully
+    </p>
+
+    <p class="filename">
+        <strong>Uploaded File:</strong> {{ filename }}
+    </p>
+
+    <div class="result-box">
+
+        <!-- ================= LEFT ================= -->
+
+        <div class="image-box">
+            <h2>📄 Certificate Preview</h2>
+
+            {% if file_extension == ".pdf" %}
+            <iframe
+                src="/uploads/{{ image }}">
+            </iframe>
+            {% else %}
+
+            <img
+                src="/uploads/{{ image }}"
+                alt="Certificate">
+
+            {% endif %}
+
+        </div>
+
+        <!-- ================= RIGHT ================= -->
+
+        <div class="text-box">
+
+            <h2 style="margin-bottom:20px;color:#2563eb;">
+                📋 Extracted Certificate Information
+            </h2>
+
+            <table class="info-table">
+
+                <tr>
+                    <th>👤 Candidate Name</th>
+                    <td>{{ name }}</td>
+                </tr>
+
+                <tr>
+                    <th>🎓 Certificate Title</th>
+                    <td>{{ title }}</td>
+                </tr>
+
+                <tr>
+                    <th>🏢 Organization</th>
+                    <td>{{ organization }}</td>
+                </tr>
+
+                <tr>
+                    <th>📅 Issue Date</th>
+                    <td>{{ date }}</td>
+                </tr>
+
+                <tr>
+                    <th>🆔 Certificate Number</th>
+                    <td>{{ certificate_number }}</td>
+                </tr>
+
+                <tr>
+                    <th>⭐ Grade / Score</th>
+                    <td>{{ grade }}</td>
+                </tr>
+
+                <tr>
+                    <th>⏳ Duration</th>
+                    <td>{{ duration }}</td>
+                </tr>
+
+            </table>
+
+            <h2 style="margin-bottom:15px;color:#2563eb;">
+                📝 OCR Extracted Text
+            </h2>
+
+            <textarea readonly>{{ text }}</textarea>
+
+        </div>
+
+    </div>
+
+    <div class="button-group">
+
+        <a href="/download">
+            <button>
+                📥 Download OCR Result
+            </button>
+        </a>
+
+        <a href="/">
+            <button>
+                🔄 Upload Another Certificate
+            </button>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        <hr style="margin:35px 0;border:none;border-top:1px solid #ddd;">
+
+        <p>
+
+            <strong>Certificate OCR System</strong><br>
+            AI-Powered Certificate Information Extraction using
+            <strong>FastAPI</strong>,
+            <strong>Tesseract OCR</strong>,
+            <strong>Python</strong> and
+            <strong>Jinja2 Templates</strong>.
+
+        </p>
+
+    </div>
+</div>
+
+</body>
+</html>

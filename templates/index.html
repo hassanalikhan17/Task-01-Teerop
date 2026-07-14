@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate OCR System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📄 Certificate OCR System</h1>
+
+    <p class="subtitle">
+
+        AI-Powered Certificate Information Extraction Platform
+        <br>
+        Upload your certificate (JPG, PNG or PDF) and automatically extract important information using Optical Character Recognition (OCR).
+
+    </p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+
+        <input
+            type="file"
+            name="file"
+            accept=".jpg,.jpeg,.png,.pdf"
+            required>
+
+        <br><br><br>
+
+        <button type="submit">
+            🚀 Extract Certificate Information
+        </button>
+
+    </form>
+
+    <div class="footer">
+        <br><br>
+        <p>
+
+            ✔ Image Support &nbsp;&nbsp; | &nbsp;&nbsp;
+            ✔ PDF Support &nbsp;&nbsp; | &nbsp;&nbsp;
+            ✔ OCR Powered by Tesseract &nbsp;&nbsp; | &nbsp;&nbsp;
+            ✔ FastAPI Backend
+
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

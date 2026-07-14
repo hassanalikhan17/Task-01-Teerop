@@ -1,12 +1,11 @@
-/* ===========================
-   GOOGLE FONT
-=========================== */
+/*==================================================
+            GOOGLE FONT
+==================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* ===========================
-   RESET
-=========================== */
-
+/*==================================================
+                RESET
+==================================================*/
 *{
     margin:0;
     padding:0;
@@ -19,317 +18,785 @@ html{
 }
 
 body{
+
+    background:#1b1b1d;
+
     min-height:100vh;
-    background:linear-gradient(135deg,#70b1d4,#5fbada);
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    padding:40px;
+
+    padding:45px;
+
 }
 
-/* ===========================
-   MAIN CONTAINER
-=========================== */
+/*==================================================
+                MAIN CONTAINER
+==================================================*/
 
 .container{
-    width:1250px;
-    max-width:95%;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(15px);
-    border-radius:25px;
-    padding:50px;
-    box-shadow:0 20px 60px rgba(0,0,0,.25);
-    animation:fade .7s ease;
-} 
 
-/* ===========================
-   ANIMATION
-=========================== */
+    width:1350px;
+
+    max-width:96%;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+    animation:fade .6s ease;
+
+}
 
 @keyframes fade{
+
 from{
+
 opacity:0;
+
 transform:translateY(30px);
+
 }
 
 to{
+
 opacity:1;
+
 transform:translateY(0);
-}
+
 }
 
-/* ===========================
-   HEADINGS
-=========================== */
+}
+
+/*==================================================
+                HEADER
+==================================================*/
 
 h1{
-font-size:48px;
-font-weight:700;
-text-align:center;
-color:#1e3a8a;
-margin-bottom:15px;
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#111827;
+
+    font-weight:700;
+
+    margin-top:40px;
+
+    letter-spacing:.5px;
+
 }
 
 .subtitle{
-text-align:center;
-font-size:18px;
-color:#6b7280;
-margin-bottom:40px;
-line-height:1.8;
+
+    width:80%;
+
+    margin:18px auto 40px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-size:17px;
+
+    line-height:1.9;
+
 }
 
-/* ===========================
-UPLOAD CARD
-=========================== */
+/*==================================================
+                FORM
+==================================================*/
 
 form{
-width:100%;
-text-align:center;
+
+    width:88%;
+
+    margin:auto;
+
 }
 
+/*==================================================
+                FILE UPLOAD
+==================================================*/
+
 input[type=file]{
-width:100%;
-padding:30px;
-border:3px dashed #60a5fa;
-border-radius:18px;
-background:#f8fbff;
-font-size:18px;
-cursor:pointer;
-transition:.4s;
+
+    width:100%;
+
+    padding:28px;
+
+    border:2px dashed #9ca3af;
+
+    background:#f8fafc;
+
+    border-radius:14px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    font-size:16px;
+
 }
 
 input[type=file]:hover{
-background:#eef6ff;
-border-color:#2563eb;
+
+    background:#eef2f7;
+
+    border-color:#111827;
+
 }
 
-/* ===========================
-BUTTON
-=========================== */
+input[type=file]::file-selector-button{
+
+    border:none;
+
+    background:#111827;
+
+    color:#ffffff;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-right:20px;
+
+    transition:.3s;
+
+}
+
+input[type=file]::file-selector-button:hover{
+
+    background:#374151;
+
+}
+
+/*==================================================
+                BUTTON
+==================================================*/
 
 button{
-padding:16px 40px;
-border:none;
-border-radius:50px;
-background:linear-gradient(135deg,#58a3f4,#4f46e5);
-color:white;
-font-size:18px;
-font-weight:600;
-cursor:pointer;
-transition:.35s;
-box-shadow:0 15px 25px rgba(37,99,235,.35);
+
+    display:block;
+
+    margin:35px auto 0;
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
 button:hover{
-transform:translateY(-4px);
-box-shadow:0 20px 35px rgba(37,99,235,.45);
+
+    background:#374151;
+
+    transform:translateY(-2px);
+
 }
 
-/* ===========================
-SUCCESS
-=========================== */
+/*==================================================
+                SUCCESS MESSAGE
+==================================================*/
 
 .success{
-background:#dcfce7;
-color:#15803d;
-padding:15px;
-border-radius:12px;
-text-align:center;
-font-size:18px;
-font-weight:600;
-margin-bottom:30px;
+
+    width:88%;
+
+    margin:30px auto;
+
+    padding:18px;
+
+    background:#ecfdf5;
+
+    color:#166534;
+
+    border-left:5px solid #16a34a;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    text-align:center;
+
 }
 
-/* ===========================
-FILE NAME
-=========================== */
+/*==================================================
+                FILE NAME
+==================================================*/
 
 .filename{
-font-size:17px;
-text-align:center;
-margin-bottom:35px;
-color:#555;
-}
 
-/* ===========================
-RESULT BOX
-=========================== */
+    width:88%;
+
+    margin:25px auto;
+
+    color:#374151;
+
+    font-size:17px;
+
+    text-align:center;
+
+}
+/*==================================================
+                RESULT LAYOUT
+==================================================*/
 
 .result-box{
-display:flex;
-gap:35px;
-align-items:flex-start;
+
+    width:92%;
+
+    margin:35px auto;
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
 }
 
-/* ===========================
-IMAGE CARD
-=========================== */
+/*==================================================
+                PREVIEW CARD
+==================================================*/
 
 .image-box{
-width:40%;
-background:#ffffff;
-border-radius:18px;
-padding:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
-transition:.3s;
-}
 
-.image-box:hover{
-transform:translateY(-5px);
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
 }
 
 .image-box h2{
-text-align:center;
-margin-bottom:20px;
-color:#2563eb;
-font-size:24px;
+
+    background:#111827;
+
+    color:white;
+
+    padding:18px;
+
+    font-size:22px;
+
+    text-align:center;
+
+    font-weight:600;
+
 }
 
 .image-box img{
-width:100%;
-border-radius:12px;
-border:1px solid #ddd;
-}
 
-/* ===========================
-PDF PREVIEW
-=========================== */
+    width:100%;
+
+    display:block;
+
+    padding:15px;
+
+    background:white;
+
+}
 
 .image-box iframe{
-width:100%;
-height:650px;
-border:none;
-border-radius:12px;
+
+    width:100%;
+
+    height:680px;
+
+    border:none;
+
+    background:white;
+
 }
 
-/* ===========================
-TEXT BOX
-=========================== */
+/*==================================================
+                INFORMATION CARD
+==================================================*/
 
 .text-box{
-width:60%;
-background:#fff;
-padding:25px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    background:white;
+
+    border-radius:15px;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    padding:28px;
+
 }
 
-/* ===========================
-TABLE
-=========================== */
+/*==================================================
+                SECTION TITLES
+==================================================*/
+
+.text-box h2{
+
+    color:#111827 !important;
+
+    font-size:30px;
+
+    margin-bottom:25px !important;
+
+    font-weight:700;
+
+}
+
+/*==================================================
+                TABLE
+==================================================*/
 
 .info-table{
-width:100%;
-border-collapse:collapse;
-margin-bottom:30px;
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:35px;
+
+}
+
+.info-table tr{
+
+    border-bottom:1px solid #e5e7eb;
+
 }
 
 .info-table th{
-background:#2563eb;
-color:white;
-padding:15px;
-width:35%;
-text-align:left;
-font-size:15px;
+
+    width:35%;
+
+    padding:18px;
+
+    background:#f3f4f6;
+
+    color:#111827;
+
+    text-align:left;
+
+    font-size:16px;
+
+    font-weight:600;
+
 }
 
 .info-table td{
-padding:15px;
-background:#f8fbff;
-font-size:15px;
-border-bottom:1px solid #ddd;
+
+    padding:18px;
+
+    background:#ffffff;
+
+    color:#374151;
+
+    font-size:16px;
+
 }
 
-/* ===========================
-TEXTAREA
-=========================== */
+.info-table tr:hover td{
+
+    background:#fafafa;
+
+}
+
+.info-table tr:hover th{
+
+    background:#e5e7eb;
+
+}
+
+/*==================================================
+                OCR TEXT
+==================================================*/
 
 textarea{
-width:100%;
-height:300px;
-padding:20px;
-border:none;
-border-radius:15px;
-background:#111827;
-color:#e5e7eb;
-font-size:15px;
-line-height:1.8;
-resize:none;
+
+    width:100%;
+
+    height:320px;
+
+    background:#111827;
+
+    color:#f8fafc;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    resize:none;
+
+    outline:none;
+
+    font-family:Consolas, monospace;
+
 }
 
-/* ===========================
-BUTTON GROUP
-=========================== */
+/*==================================================
+                SCROLLBAR
+==================================================*/
+
+textarea::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+textarea::-webkit-scrollbar-thumb{
+
+    background:#6b7280;
+
+    border-radius:10px;
+
+}
+
+textarea::-webkit-scrollbar-track{
+
+    background:#1f2937;
+
+}
+/*==================================================
+                BUTTON GROUP
+==================================================*/
 
 .button-group{
-margin-top:35px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+
+    width:92%;
+
+    margin:40px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
 }
 
-/* ===========================
-FOOTER
-=========================== */
+.button-group a{
+
+    text-decoration:none;
+
+}
+
+.button-group button{
+
+    min-width:240px;
+
+    padding:16px 30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#111827;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+}
+
+.button-group button:hover{
+
+    background:#2d3748;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 25px rgba(0,0,0,.25);
+
+}
+
+/*==================================================
+                    FOOTER
+==================================================*/
 
 .footer{
-margin-top:35px;
-text-align:center;
-font-size:14px;
-color:#888;
+
+    margin-top:45px;
+
+    padding:30px;
+
+    background:#111827;
+
+    color:#d1d5db;
+
+    text-align:center;
+
+    font-size:15px;
+
+    line-height:1.9;
+
 }
 
-/* ===========================
-RESPONSIVE
-=========================== */
+.footer strong{
 
-@media(max-width:1100px){
-.result-box{
-flex-direction:column;
+    color:#ffffff;
+
 }
 
-.image-box{
-width:100%;
+.footer hr{
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    margin-bottom:25px;
+
 }
 
+/*==================================================
+                CARD HOVER
+==================================================*/
+
+.image-box,
 .text-box{
-width:100%;
+
+    transition:.35s;
+
 }
+
+.image-box:hover,
+.text-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+/*==================================================
+            TABLE ANIMATION
+==================================================*/
+
+.info-table tr{
+
+    transition:.25s;
+
+}
+
+/*==================================================
+                IMAGE
+==================================================*/
+
+.image-box img{
+
+    transition:.35s;
+
+}
+
+.image-box img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:1200px){
+
+.result-box{
+
+    grid-template-columns:1fr;
+
+}
+
+.image-box,
+.text-box{
+
+    width:100%;
+
+}
+
+.image-box iframe{
+
+    height:520px;
+
+}
+
 }
 
 @media(max-width:768px){
+
+body{
+
+    padding:20px;
+
+}
+
 .container{
-padding:25px;
+
+    width:100%;
+
+    border-radius:12px;
+
 }
 
 h1{
-font-size:34px;
+
+    font-size:32px;
+
 }
 
 .subtitle{
-font-size:16px;
+
+    width:90%;
+
+    font-size:15px;
+
 }
 
-button{
-width:100%;
+form{
+
+    width:92%;
+
 }
 
-input[type=file]{
-padding:20px;
+.success{
+
+    width:92%;
+
 }
 
-textarea{
-height:230px;
+.filename{
+
+    width:92%;
+
+}
+
+.text-box{
+
+    padding:18px;
+
+}
+
+.text-box h2{
+
+    font-size:22px;
+
 }
 
 .info-table th,
 .info-table td{
-font-size:14px;
-padding:12px;
+
+    padding:12px;
+
+    font-size:14px;
+
+}
+
+textarea{
+
+    height:220px;
+
+    font-size:14px;
+
+}
+
+.button-group{
+
+    flex-direction:column;
+
+}
+
+.button-group button{
+
+    width:100%;
+
+}
+
+.footer{
+
+    font-size:14px;
+
+    padding:22px;
+
 }
 
 .image-box iframe{
-height:450px;
+
+    height:380px;
+
 }
+
+}
+
+@media(max-width:500px){
+
+h1{
+
+    font-size:28px;
+
+}
+
+.subtitle{
+
+    font-size:14px;
+
+}
+
+input[type=file]{
+
+    padding:18px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
 }
